@@ -78,12 +78,79 @@ body {
 }
 
 .slider {
-  margin: 2rem auto;
   width: 80%;
-  height: 0.5rem;
-  border-radius: 0.5rem;
-  background: var(--slider-bar);
+  background: transparent;
   -webkit-appearance: none;
+  margin: 2rem auto;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.slider:focus {
+  outline: none;
+}
+
+.slider::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background: var(--slider-bg);
+  background-image: url('./images/icon-slider.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50% 30%;
+  cursor: pointer;
+  margin-top: -8%;
+  box-shadow: 0 15px 20px 0px var(--slider-bar);
+}
+
+.slider::-moz-range-thumb {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background: var(--slider-bg);
+  border: none;
+  background-image: url('./images/icon-slider.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50% 30%;
+  cursor: pointer;
+  box-shadow: 0 15px 20px 0px var(--slider-bar);
+}
+
+.slider:focus::-webkit-slider-thumb {
+  background-color: hsl(174, 86%, 28%);
+}
+
+.slider:focus::-webkit-slider-thumb {
+  background-color: hsl(174, 86%, 28%);
+}
+
+.slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 0.5rem;
+  cursor: pointer;
+  background: var(--no-slider-bar);
+  border-radius: 2rem;
+}
+
+.slider::-moz-range-track {
+  width: 100%;
+  height: 0.5rem;
+  cursor: pointer;
+  background: var(--no-slider-bar);
+  border-radius: 2rem;
 }
 
 .pricing {
@@ -163,9 +230,10 @@ body {
 
 .advantages {
   list-style-image: url('./images/icon-check.svg');
+  list-style-position: inside;
   line-height: 2;
   color: var(--txt);
-  margin-bottom: 3rem;
+  margin: 0 auto 3rem;
 }
 
 .trial__button {
