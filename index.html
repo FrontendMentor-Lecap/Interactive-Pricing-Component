@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero">
+        <h1>Simple, traffic-based pricing</h1>
+        <h3>Sign-up for our 30-day trial. No credit card required.</h3>
+      </div>
+
+      <div class="card">
+        <div class="slider__area">
+          <h2 class="pageviews">100k Pageviews</h2>
+          <input type="range" class="slider" list="slider" />
+          <datalist id="slider">
+            <option value="10" label="10k pageviews"></option>
+            <option value="50" label="50k pageviews"></option>
+            <option value="100" label="100k pageviews"></option>
+            <option value="500" label="500k pageviews"></option>
+            <option value="1" label="1M pageviews"></option>
+          </datalist>
+          <h3><span id="price">$16.00</span>/ month</h3>
+          <div class="billing">
+            <p>Monthly Billing</p>
+            <label for="checkbox" class="switch">
+              <input type="checkbox" />
+              <span class="checkbox__round"></span>
+            </label>
+            <p>Yearly Billing</p>
+            <small>-25%</small>
+          </div>
+          <div class="trial">
+            <ul class="advantages">
+              <li>Unlimited websites</li>
+              <li>100% data ownership</li>
+              <li>Email reports</li>
+            </ul>
+            <a href="#" class="trial__button">Start my trial</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    Simple, traffic-based pricing Sign-up for our 30-day trial. No credit card
+    required. Pageviews $ /month Monthly Billing Yearly Billing 25% discount
+    Unlimited websites 100% data ownership Email reports Start my trial
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
