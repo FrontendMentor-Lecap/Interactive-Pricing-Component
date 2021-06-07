@@ -12,6 +12,14 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
     <title>Frontend Mentor | Interactive pricing component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -29,7 +37,10 @@
     <div class="container">
       <div class="hero">
         <h1>Simple, traffic-based pricing</h1>
-        <h3>Sign-up for our 30-day trial. No credit card required.</h3>
+        <div class="hero_subtitle">
+          <h3>Sign-up for our 30-day trial.</h3>
+          <h3>No credit card required.</h3>
+        </div>
       </div>
 
       <div class="card">
@@ -43,31 +54,30 @@
             <option value="500" label="500k pageviews"></option>
             <option value="1" label="1M pageviews"></option>
           </datalist>
-          <h3><span id="price">$16.00</span>/ month</h3>
+          <div class="pricing">
+            <h3 id="price">$16.00</h3>
+            <h4>/ month</h4>
+          </div>
           <div class="billing">
             <p>Monthly Billing</p>
-            <label for="checkbox" class="switch">
-              <input type="checkbox" />
-              <span class="checkbox__round"></span>
+            <label for="billing-checkbox" class="switch">
+              <input type="checkbox" id="billing-checkbox" />
+              <div></div>
             </label>
             <p>Yearly Billing</p>
             <small>-25%</small>
           </div>
-          <div class="trial">
-            <ul class="advantages">
-              <li>Unlimited websites</li>
-              <li>100% data ownership</li>
-              <li>Email reports</li>
-            </ul>
-            <a href="#" class="trial__button">Start my trial</a>
-          </div>
+        </div>
+        <div class="trial">
+          <ul class="advantages">
+            <li>Unlimited websites</li>
+            <li>100% data ownership</li>
+            <li>Email reports</li>
+          </ul>
+          <a href="#" class="trial__button">Start my trial</a>
         </div>
       </div>
     </div>
-
-    Simple, traffic-based pricing Sign-up for our 30-day trial. No credit card
-    required. Pageviews $ /month Monthly Billing Yearly Billing 25% discount
-    Unlimited websites 100% data ownership Email reports Start my trial
 
     <div class="attribution">
       Challenge by
