@@ -46,14 +46,15 @@
       <div class="card">
         <div class="slider__area">
           <h2 class="pageviews">100k Pageviews</h2>
-          <input type="range" class="slider" list="slider" />
-          <datalist id="slider">
-            <option value="10" label="10k pageviews"></option>
-            <option value="50" label="50k pageviews"></option>
-            <option value="100" label="100k pageviews"></option>
-            <option value="500" label="500k pageviews"></option>
-            <option value="1" label="1M pageviews"></option>
-          </datalist>
+          <input
+            type="range"
+            class="slider"
+            list="slider"
+            min="1"
+            max="5"
+            steps="1"
+          />
+
           <div class="pricing">
             <h3 id="price">$16.00</h3>
             <h4>/ month</h4>
